@@ -10,11 +10,12 @@ console.log("working");
 let map = L.map("mapid").setView([34.0522, -118.2437], 14);
 
 // Add circle coordinates = [], line color = 
-L.circle([34.0522, -118.2437], {
+// circle vs circleMarker -> the radius is meters vs pixel meaning the size of the marker becomes bigger as you zoom out
+L.circleMarker([34.0522, -118.2437], {
     color: 'black',
     fillColor: '#ffed83',
     fillOpacity: 0.5,
-    radius: 100
+    radius: 300
 }).addTo(map);
 
 //  Add a marker to the map for Los Angeles, California.
