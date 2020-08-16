@@ -6,7 +6,7 @@ console.log("working");
 // let tileType - "dark-v10"
 
 // Create the map object with center at the San Francisco airport.
-let map = L.map('mapid').setView([39.828175, -98.5795], 5);
+let map = L.map('mapid').setView([39.828175, -98.5795], 5git );
 
 // Coordinates for each point to be used in the polyline.
 let line = [
